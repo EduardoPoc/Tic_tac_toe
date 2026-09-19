@@ -1,6 +1,13 @@
-{% extends 'base.html' %}
-{% block conteudo %}
+{% extends "base.html" %}
 
-    <h1>Jogo da Velha</h1>
-    <p>Em breve um tabuleiro estará disponível para jogar!</p>
+{% block conteudo %}
+<h1>Jogo da Velha</h1>
+
+<div class="tabuleiro">
+    {% for pos in tabuleiro %}
+        <span class="celula">
+            {{ valor }}
+        </span>
+    {% endfor %}
+</div>
 {% endblock %}
